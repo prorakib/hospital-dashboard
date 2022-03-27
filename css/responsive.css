@@ -1,0 +1,194 @@
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+}
+
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+	.maan-layout-style-one .maan-counter-wpr.grid-4 {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* #sidebar {
+        width: 80px;
+        height: 100%!important;
+        position: absolute!important;
+        overflow: visible!important;
+        top: 0!important;
+        z-index: 666;
+        float: left!important;
+        bottom: 0!important;
+    } */
+    /* .maan-top-navbar .maan-navbar .maan-navbar-wrapper .maan-nav-control .maan-hamburger {
+        display: none;
+    } */
+    /* #sidebar ul li a span {
+        text-transform: capitalize;
+        display: none;
+    } */
+    .maan-sidebar .maan-sidebar-header h3 span {
+        display: block;
+    }
+    .maan-sidebar.active .maan-sidebar-header h3 img {
+        display: none;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .maan-sidebar.active .maan-sidebar-header h3 img {
+        display: none;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .maan-sidebar .maan-sidebar-header h3 img {
+        display: none;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    #content {
+        width: calc(100% - 80px);
+    }
+    .maan-top-navbar .maan-navbar .maan-navbar-wrapper .maan-navbar-rightside ul li a {
+        padding: 7px 10px !important;
+    }
+    .maan-layout-style-one .maan-content-wrapper.grid-2 {
+        display: grid;
+        grid-gap: 0rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 992px) {
+	.maan-layout-style-one .maan-counter-wpr.grid-4 {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Extra small Device. */
+@media (max-width: 768px) {
+    .maan-layout-style-one .maan-counter-wpr.grid-4 {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+	
+
+
+}
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	
+
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+/* @media only screen and (min-width:992px){
+	#sidebar.active {
+    width:80px;
+	height:100%!important;
+	position:absolute!important;
+	overflow:visible!important;
+	top:0!important;
+	z-index:666;
+	float:left!important;
+    bottom: 0!important;
+} */
+
+
+#sidebar.active .sidebar-header h3 span {
+   display:none;
+   transition:all 0.5s ease;
+}
+
+/* #sidebar.active ul li a span{
+    display:none;
+	transition:all 0.5s ease;
+} */
+
+#sidebar.active .dropdown-toggle::after {
+    display:none;
+	transition:all 0.5s ease;
+}
+
+/* #content {
+    width: calc(100% - 80px);
+    position: relative;
+    float: right;
+    transition: all 0.3s;
+    background-color: #EEEEEE;
+}  
+
+#content.active {
+    width: calc(100% - 80px);
+}  */
+
+#sidebar.active .menu {
+    position: absolute;
+    left: 81px;
+    background-color: white;
+    width: 180px;
+    height: auto;
+    margin: 5px 0;
+    top: 0;
+    border: 1px solid #dcd9d9;
+    z-index: 4;
+}                                                                                                                                                                                                              
+}
+
+
+@media only screen and (min-width:992px){
+.maan-notification-dropdown-menu {
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
+	transform: translate3d(0, -20px, 0);
+    visibility: hidden;
+	transition: all 150ms linear;
+    display: block;
+	min-width:15rem;
+	right: 0;
+    left: auto;
+    opacity: 0;
+}
+}
+	
+
+
+
+/*===============small-screen overlay sidebar design media queries==============*/
+
+@media only screen and (max-width:992px){
+#sidebar {
+    position:fixed;
+    top: 0;
+    bottom:0;
+    z-index: 10;
+    width: 260px;
+	transform:translatex(-100%);
+	transition: all 150ms linear;
+	box-shadow:none!important;
+}	
+
+.body-overlay{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:none;
+	visibility:hidden;
+	opacity:0;
+	z-index:3;
+	transition: all 150ms linear;
+	background-color:rgba(0,0,0,0.5);
+}
+}

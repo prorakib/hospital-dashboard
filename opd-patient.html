@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Hospital Dashboard Admin panel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!----css3---->
+    <!-- <link rel="stylesheet" href="css/custom.css"> -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+
+    <link href="css/fontawesome.min.css" rel="stylesheet" />
+    <link href="css/nice-select.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+
+
+    <!--google material icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+    <div class="maan-wrapper">
+        <div class="body-overlay"></div>
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="maan-sidebar">
+            <div class="maan-sidebar-header">
+                <div class="sidebar-close">
+                    <i class="fa fa-times"></i>
+                </div>
+                <h3><img src="images/logo/logo.png" class="img-fluid" alt=""><span>maan Hospital</span></h3>
+            </div>
+            <ul class="maan-list-unstyled components" id="accordionExample">
+                <li class="dropdown">
+                    <a href="#collapse1" id="homeSubmenu1" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d1.png" alt="Icon"></i><span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse2" id="homeSubmenu2" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d3.png" alt="Icon"></i><span>appointment</span>
+                    </a>
+                    <ul id="collapse2" class="accordion-collapse collapse" aria-labelledby="homeSubmenu2"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="appointment-1.html"> appointment 1</a></li>
+                        <li><a href="appointment-2.html">appointment 2</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse3" id="homeSubmenu3" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d4.png" alt="Icon"></i><span>IPD-In Patient</span>
+                    </a>
+                    <ul id="collapse3" class="accordion-collapse collapse" aria-labelledby="homeSubmenu3"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="opd-patient.html">IPD-In Patient 1</a></li>
+                        <li><a href="lpd-in-patient-2.html">IPD-In Patient 2</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse4" id="homeSubmenu4" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d5.png" alt="Icon"></i><span>OPD-out patient</span>
+                    </a>
+                    <ul id="collapse4" class="accordion-collapse collapse" aria-labelledby="homeSubmenu4"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="opd-patient.html">OPD-out patient 1</a></li>
+                        <li><a href="lpd-out-patient-2.html">OPD-out patient 2</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse5" id="homeSubmenu5" class="accordion-button" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d4.png" alt="Icon"></i><span>Doctor</span>
+                    </a>
+                    <ul id="collapse5" class="accordion-collapse collapse show" aria-labelledby="homeSubmenu3"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="add-doctor">Add Doctor</a></li>
+                        <li><a href="list-of-doctor">List Of Doctors</a></li>
+                        <li><a href="treatment-history.html">Treatment History</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse6" id="homeSubmenu6" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d5.png" alt="Icon"></i><span>Department</span>
+                    </a>
+                    <ul id="collapse6" class="accordion-collapse collapse" aria-labelledby="homeSubmenu6"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="department.html">Add Department</a></li>
+                        <li><a href="department.html">Department List</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse7" id="homeSubmenu7" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d6.png" alt="Icon"></i><span>Schedule</span>
+                    </a>
+                    <ul id="collapse7" class="accordion-collapse collapse" aria-labelledby="homeSubmenu5"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="Schedule-1.html">Schedule 1</a></li>
+                        <li><a href="Schedule-2.html">Schedule 2</a></li>
+                        <li><a href="Schedule-3.html">Schedule 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse8" id="homeSubmenu8" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d7.png" alt="Icon"></i><span>Birthday</span>
+                    </a>
+                    <ul id="collapse8" class="accordion-collapse collapse" aria-labelledby="homeSubmenu8"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="birthday-list-1.html">Birthday List 1</a></li>
+                        <li><a href="birthday-list-2.html">Birthday List 2</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse9" id="homeSubmenu9" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d8.png" alt="Icon"></i><span>Blog</span>
+                    </a>
+                    <ul id="collapse9" class="accordion-collapse collapse" aria-labelledby="homeSubmenu8"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="add-blog.html">Add Blog</a></li>
+                        <li><a href="blog-list.html">Blog List </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse10" id="homeSubmenu10" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d9.png" alt="Icon"></i><span>Testimonials</span>
+                    </a>
+                    <ul id="collapse10" class="accordion-collapse collapse" aria-labelledby="homeSubmenu8"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="testimonial-1.html">Testimonials 1</a></li>
+                        <li><a href="testimonial-2.html">Testimonials 2 </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse11" id="homeSubmenu11" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d10.png" alt="Icon"></i><span>news letter</span>
+                    </a>
+                    <ul id="collapse11" class="accordion-collapse collapse" aria-labelledby="homeSubmenu10"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="add-newsletterl">Add newsletter</a></li>
+                        <li><a href="newsletterdetails.html">newsletter Details</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse12" id="homeSubmenu12" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d11.png" alt="Icon"></i><span>footer</span>
+                    </a>
+                    <ul id="collapse12" class="accordion-collapse collapse" aria-labelledby="homeSubmenu11"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="footer-1.html">footer 1</a></li>
+                        <li><a href="footer-2">footer 2</a></li>
+                        <li><a href="footer-3">footer 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse13" id="homeSubmenu13" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d12.png" alt="Icon"></i><span>manage role</span>
+                    </a>
+                    <ul id="collapse13" class="accordion-collapse collapse" aria-labelledby="homeSubmenu11"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="manage-role-1.html">manage role 1</a></li>
+                        <li><a href="manage-role-2.html">manage role 2</a></li>
+                        <li><a href="manage-role-3.html">manage role 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#collapse14" id="homeSubmenu14" class="accordion-button collapsed" data-bs-toggle="collapse">
+                        <i><img src="images/icons/d13.png" alt="Icon"></i><span>setting</span>
+                    </a>
+                    <ul id="collapse14" class="accordion-collapse collapse" aria-labelledby="homeSubmenu14"
+                        data-bs-parent="#accordionExample">
+                        <li><a href="#">Header</a></li>
+                        <li><a href="#">Website title</a></li>
+                        <li><a href="#">Fav icon</a></li>
+                        <li><a href="index.html">logo</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+        </nav>
+
+
+        <!-- header  -->
+       
+        <!-- Page Content  -->
+        <div id="content" class="maan-rightside-content">
+            <div class="maan-header abs-header header-space menu-top">
+                <div class="maan-menu-nav-sec header-content">
+                    <div class="maan-top-navbar">
+                    <nav class="maan-navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <div class="maan-navbar-wrapper">
+                                <div class="maan-header-menu-wrapper">
+                                    <div class="maan-header-menu-item">
+                                        <div class="maan-nav-control">
+                                            <div class="maan-hamburger" id="sidebarCollapse">
+                                                <span class="material-icons line"></span><span
+                                                    class="material-icons line"></span><span
+                                                    class="material-icons line"></span>
+                                            </div>
+                                            <div class="maan-navbar-brand-icon">
+                                                <a class="navbar-brand" href="#"><span class="material-icons">public</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="maan-header-menu-item">
+                                        <div class="search-bar text-center">
+                                            <form>
+                                                <input class="maan-form-control form-control input-style-1" type="email"
+                                                    placeholder="Search Anything...">
+                                                <button type="submit" class="btn-sub">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="maan-header-menu-item">
+                                        <div class="maan-navbar-rightside">
+                                            <ul class="nav navbar-nav ml-auto">
+                                                <li class="nav-item md-d-none">
+                                                    <a class="maan-icon-img nav-link" href="#">
+                                                        <span class="material-icons"><img src="images/usa.png" alt=""> </span>
+                                                    </a>
+                                                </li>
+                                                <li class="maan-item nav-item md-d-none">
+                                                    <select>
+                                                        <option value="1">english</option>
+                                                        <option value="2">bangla</option>
+                                                    </select>
+                                                </li>
+                                                <li class="nav-item md-d-none">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="material-icons"><i class="fas fa-bed"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item md-d-none">
+                                                    <a class="nav-link" href="#">
+                                                        <span class="material-icons"><i class="far fa-calendar-alt"></i>
+                                                        </span>
+                                                    </a>
+    
+                                                </li>
+                                                <li class="maan-mess-dropdown dropdown nav-item">
+                                                    <a href="#" class="nav-link" data-toggle="dropdown">
+                                                        <span class="material-icons"><i
+                                                                class="far fa-envelope-open"></i></span>
+                                                        <span class="notification">2</span>
+                                                    </a>
+                                                     <ul class="maan-mess-dropdown-menu dropdown-menu">
+                                                         <li><h6>You have 5 messages</h6></li>
+                                                         <li> 
+                                                            <ul class="menu inner-content-div">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <div class="pull-left">
+                                                                        <img src="images/appoint/01.png" class="rounded-circle" alt="User Image">
+                                                                        </div>
+                                                                        <div class="mail-contnet">
+                                                                        <h4>
+                                                                            Lorem Ipsum
+                                                                            <small><i class="fa fa-clock-o"></i> 15 mins</small>
+                                                                        </h4>
+                                                                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius soluta, quaerat voluptatibus consequuntur non minus cupiditate voluptatem dolor expedita veritatis asperiores obcaecati mollitia odit porro dicta nobis! Placeat, distinctio sunt, enim voluptatem esse dolorem nihil est non nobis ratione nemo fugiat recusandae vel ducimus rem cum hic. Maxime et molestiae rerum debitis, itaque nihil expedita necessitatibus nostrum perferendis culpa pariatur, laboriosam magni quod. Accusamus ipsum similique minima quam fuga, exercitationem inventore doloremque repellendus repellat tenetur ad ex, deserunt incidunt voluptatibus esse sed eos, soluta dolorum consequatur quo? Deleniti, excepturi aspernatur dignissimos veritatis quisquam asperiores iste perferendis repellendus ipsam amet fugit.</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <div class="pull-left">
+                                                                        <img src="images/appoint/01.png" class="rounded-circle" alt="User Image">
+                                                                        </div>
+                                                                        <div class="mail-contnet">
+                                                                        <h4>
+                                                                            Lorem Ipsum
+                                                                            <small><i class="fa fa-clock-o"></i> 15 mins</small>
+                                                                        </h4>
+                                                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <div class="pull-left">
+                                                                        <img src="images/appoint/01.png" class="rounded-circle" alt="User Image">
+                                                                        </div>
+                                                                        <div class="mail-contnet">
+                                                                        <h4>
+                                                                            Lorem Ipsum
+                                                                            <small><i class="fa fa-clock-o"></i> 15 mins</small>
+                                                                        </h4>
+                                                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                         </li>
+                                                        <li><a href="" class="seemore-link">See all e-Mails</a></li>
+                                                      </ul> 
+                                                    </li>
+                                                <li class="maan-notifocation-dropdown nav-item">
+                                                    <a href="#" class="nav-link" data-toggle="dropdown">
+                                                        <span class="material-icons"><i class="far fa-bell"></i></span>
+                                                        <span class="notification">2</span>
+                                                    </a>
+                                                    <ul class="maan-notification-dropdown-menu dropdown-menu">
+                                                        <li>
+                                                            <a href="#">You have 5 new messages</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">You're now friend with Mike</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Wish Mary on her birthday!</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">5 warnings in Server Console</a>
+                                                        </li>
+    
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown maan-profile-dropdown nav-item">
+                                                    <a href="#" class="nav-link" data-toggle="dropdown">
+                                                        <span><img src="images/profile.png"  alt=""></span>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a href="#"><i class="far fa-user"></i> profile</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="fas fa-envelope"></i> inbox</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="fas fa-sign-out-alt"></i> logout</a>
+                                                        </li>
+    
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+    
+                        </div>
+                    </nav>
+                </div>
+                </div>
+            </div>
+            <div class="maan-main-content">
+                <div class="maan-admin-panel-wrapper">
+                    <div class="container-fluid">
+                        <div class="maan-table-header">
+                            <h3>OPD Patient</h3>
+                            <div class="header-right">
+                                <a href="" class="btn maan-btn">+ Add Patient</a>
+                            </div>
+                        </div>
+                        <div class="maan-search-actions">
+                            <div class="maan-input-group-search">
+                                <input class="form-control" type="text" placeholder="Search...">
+                                <span class="far fa-search"></span>
+                            </div>
+                            <div class="maan-action">
+                                <a href=""><img src="images/icons/copy.svg" alt=""></a>
+                                <a href=""><img src="images/icons/excel.svg" alt=""></a>
+                                <a href=""><img src="images/icons/csv.svg" alt=""></a>
+                                <a href=""><img src="images/icons/pdf.svg" alt=""></a>
+                                <a href=""><img src="images/icons/print.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="maan-dashboard-table-wrapper">
+                            <table class="table maan-dashboard-table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Patient Name</th>
+                                    <th scope="col">Patient ID</th>
+                                    <th scope="col">Guardian Name</th>
+                                    <th scope="col">Gender</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Consultant</th>
+                                    <th scope="col">Last Visit</th>
+                                    <th scope="col">Total Visit</th>
+                                    <th scope="col">Actions</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td >Savannah Da. Everleigh</td>
+                                    <td>PI-10034</td>
+                                    <td>Nackenzie Rose</td>
+                                    <td>Female</td>
+                                    <td>+880 1234 5678 90</td>
+                                    <td>Nash Griffin</td>
+                                    <td>02-Oct-2021 <br> 01:30 PM - 02:00 PM</td>
+                                    <td>15</td>
+                                    <td class="action">
+                                        <span class="edit"><i class="fas fa-pencil-alt"></i></span>
+                                        <span class="remove"><i class="fas fa-trash"></i></span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td >Elizabeth Penelope</td>
+                                    <td>PI-12071</td>
+                                    <td>Nathaniel Legend</td>
+                                    <td>Female</td>
+                                    <td>+880 1234 5678 90</td>
+                                    <td>Emily Avery</td>
+                                    <td>02-Oct-2021 <br> 01:30 PM - 02:00 PM</td>
+                                    <td>2</td>
+                                    <td class="action">
+                                        <span class="edit"><i class="fas fa-pencil-alt"></i></span>
+                                        <span class="remove"><i class="fas fa-trash"></i></span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td >Brooklyn Ivy Valentina</td>
+                                    <td>PI-14152</td>
+                                    <td>Bentley Calvin</td>
+                                    <td>Female</td>
+                                    <td>+880 1234 5678 90</td>
+                                    <td>Beckham Javier</td>
+                                    <td>02-Oct-2021 <br> 01:30 PM - 02:00 PM</td>
+                                    <td>11</td>
+                                    <td class="action">
+                                        <span class="edit"><i class="fas fa-pencil-alt"></i></span>
+                                        <span class="remove"><i class="fas fa-trash"></i></span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td >Jaxon Caleb</td>
+                                    <td>PI-10321</td>
+                                    <td>Giovanni Vincent</td>
+                                    <td>Male</td>
+                                    <td>+880 1234 5678 90</td>
+                                    <td>Cayden Emerson</td>
+                                    <td>02-Oct-2021 <br> 01:30 PM - 02:00 PM</td>
+                                    <td>17</td>
+                                    <td class="action">
+                                        <span class="edit"><i class="fas fa-pencil-alt"></i></span>
+                                        <span class="remove"><i class="fas fa-trash"></i></span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td >Alexander Christopher</td>
+                                    <td>PI-11203</td>
+                                    <td>Emmanuel Jayce</td>
+                                    <td>Female</td>
+                                    <td>+880 1234 5678 90</td>
+                                    <td>Martin  Jaden</td>
+                                    <td>02-Oct-2021 <br> 01:30 PM - 02:00 PM</td>
+                                    <td>34</td>
+                                    <td class="action">
+                                        <span class="edit"><i class="fas fa-pencil-alt"></i></span>
+                                        <span class="remove"><i class="fas fa-trash"></i></span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td >Leonardo Evan</td>
+                                    <td>PI-13155</td>
+                                    <td>Karter Arthur</td>
+                                    <td>Male</td>
+                                    <td>+880 1234 5678 90</td>
+                                    <td>Hendrix Colin</td>
+                                    <td>02-Oct-2021 <br> 01:30 PM - 02:00 PM</td>
+                                    <td>9</td>
+                                    <td class="action">
+                                        <span class="edit"><i class="fas fa-pencil-alt"></i></span>
+                                        <span class="remove"><i class="fas fa-trash"></i></span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td >Gabriella Eva Mackenzie</td>
+                                    <td>PI-12119</td>
+                                    <td>Emiliano Dean</td>
+                                    <td>Male</td>
+                                    <td>+880 1234 5678 90</td>
+                                    <td>Jake Prince</td>
+                                    <td>02-Oct-2021 <br> 01:30 PM - 02:00 PM</td>
+                                    <td>5</td>
+                                    <td class="action">
+                                        <span class="edit"><i class="fas fa-pencil-alt"></i></span>
+                                        <span class="remove"><i class="fas fa-trash"></i></span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td >Margaret Ayla</td>
+                                    <td>PI-10712</td>
+                                    <td>Matias Amari</td>
+                                    <td>Female</td>
+                                    <td>+880 1234 5678 90</td>
+                                    <td>Warren Fernando</td>
+                                    <td>02-Oct-2021 <br> 01:30 PM - 02:00 PM</td>
+                                    <td>21</td>
+                                    <td class="action">
+                                        <span class="edit"><i class="fas fa-pencil-alt"></i></span>
+                                        <span class="remove"><i class="fas fa-trash"></i></span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="maan-modal-form">
+        <div class="maan-modal-form-wrapper">
+            <div class="modal-header add-pataent-header">
+                <h2>Add Patient</h2>
+                <div class="modal-close">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+            <form class="maan-form-modal">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="maan-input-group">
+                            <label for="Patient">Patient Name <span>*</span></label>
+                            <select id="Patient">
+                                <option value="1">Savannah Da. Everleigh</option>
+                                <option value="2">Dr. Moshiur</option>
+                                <option value="2">Dr Wadud Hossain</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="maan-input-group">
+                            <label for="Doctor">Doctor <span>*</span></label>
+                            <select id="Doctor">
+                                <option value="1">Dr. Mackenzie Rose</option>
+                                <option value="2">Dr. Moshiur</option>
+                                <option value="2">Dr Wadud Hossain</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="maan-input-group">
+                            <label for="Date">Date <span>*</span></label>
+                            <input id="Date" class="form-control" type="date">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="maan-input-group">
+                            <label for="Time">Time <span>*</span></label>
+                            <select id="Time">
+                                <option value="1">Time</option>
+                                <option value="2">10 am</option>
+                                <option value="2">02 pm</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="maan-input-group">
+                            <label for="Guardian">Guardian Name <span>*</span></label>
+                            <input id="Guardian" class="form-control" type="text" placeholder="Christopher Henry">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="maan-input-group">
+                            <label for="Reference">Reference <span>*</span></label>
+                            <select id="Reference">
+                                <option value="1">Mr. Nobody</option>
+                                <option value="2">Mr. Nobody</option>
+                                <option value="2">Mr. Nobody</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="maan-input-group">
+                            <label for="Age">Age <span>*</span></label>
+                            <input id="Age" class="form-control" type="text" placeholder="EX: 37y">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="maan-input-group">
+                            <label for="Gender">Gender <span>*</span></label>
+                            <select id="Gender">
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="maan-input-group">
+                            <label for="Contact">Contact Address <span>*</span></label>
+                            <input id="Contact" class="form-control" type="text" placeholder="Enter your Address">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="maan-input-group">
+                            <label for="Phone">Phone Number <span>*</span></label>
+                            <input id="Phone" class="form-control" type="number" placeholder="+880 1234 5678 90">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="maan-input-group">
+                            <label for="Priority">Priority <span>*</span></label>
+                            <select id="Priority">
+                                <option value="1">Very Urgent</option>
+                                <option value="2">Very Urgent</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="maan-input-group">
+                            <label for="Status">Status <span>*</span></label>
+                            <select id="Status">
+                                <option value="1">Pending</option>
+                                <option value="2">Pending</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="maan-input-group">
+                            <label for="Email">Email <span>*</span></label>
+                            <input id="Email" class="form-control" type="email" placeholder="yourname@email.com">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="maan-input-group">
+                            <label for="Live">Live Consultant <span>*</span></label>
+                               <select id="Live">
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="maan-input-group">
+                            <label for="Remarks">Remarks <span>*</span></label>
+                            <input id="Remarks" class="form-control" type="email" placeholder="Write your message here">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn maan-btn">Save</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

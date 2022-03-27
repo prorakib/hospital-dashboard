@@ -1,0 +1,179 @@
+body{
+    background: #eff3f6;
+}
+.maan-admin-panel-wrapper{
+    background: #fff;
+    border-radius: 25px;
+    padding: 15px 30px;
+    .maan-table-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+        h3{
+            font-size: 25px;
+        }
+
+        .maan-btn{
+            margin-left: 50px;
+        }
+        .nice-select{
+            border: none;
+        }
+    }
+}
+.maan-btn{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 15px;
+    border-radius: 9px;
+    background: #03A9F4;
+    color: #fff;
+    &:hover, &:focus{
+        color: #fff;
+    }
+}
+
+.maan-search-actions{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .maan-input-group-search{
+        max-width: 300px;
+        width: 100%;
+        position: relative;
+        .form-control{
+            padding: 12px;
+            padding-left: 35px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            box-shadow: none;
+        }
+        span{
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translate(0, -50%);
+            color: #0C1928;
+            opacity: 0.5;
+        }
+    }
+
+    .maan-action{
+        a{
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
+}
+
+
+
+.maan-dashboard-table-wrapper{
+
+}
+
+.maan-dashboard-table{
+    thead{
+        border: none;
+        background: rgba(12, 25, 40, .05);
+        border-radius: 12px;
+        tr{
+            th{
+                border: none;
+                font-size: 14px;
+                color: rgba(12, 25, 40, .8);
+                font-weight: 400;
+                padding: 13px;
+                position: relative;
+                &:after {
+                    content: " ";
+                    display: block;
+                    right: 0;
+                    top: 50%;
+                    position: absolute;
+                    height: 70%;
+                    width: 2px;
+                    background: rgba(12, 25, 40, .1);
+                    transform: translate(0, -50%)
+                }
+                &:last-child{
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                font-size: 12px;
+                font-weight: 400;
+                color: rgba(12, 25, 40, .5);
+                vertical-align: middle;
+                border-bottom: 1px solid rgba(12, 25, 40, .1);
+            }
+            .pending{
+                color: #FFA41C;
+            }
+            .confirmed{
+                color: #25D4A9;
+            }
+            .action{
+                text-align: center;
+                span{
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    text-align: center;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+                .edit{
+                    background: rgba(37, 212, 169, .1);
+                    color: #25D4A9;
+                }
+                .remove{
+                    background: rgba(255, 37, 37, .1);
+                    color: #FF2525;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1500px){
+    .maan-dashboard-table-wrapper{
+        overflow-x: auto;
+        .maan-dashboard-table{
+            min-width: 1200px;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .maan-admin-panel-wrapper .maan-table-header{
+        display: block;
+    }
+    .maan-search-actions{
+        display: block;
+        .maan-input-group-search{
+            margin-bottom: 15px;
+            width: 100%;
+            max-width:100%;
+        }
+        .maan-action{
+            text-align: center;
+        }
+    }
+    .maan-main-content{
+        padding: 30px 10px;
+    }
+}

@@ -1,0 +1,100 @@
+.maan-modal-form{
+    padding: 100px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(12, 25, 40, .3);
+    height: 100vh;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    overflow-y: auto;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.maan-modal-form-wrapper{
+    max-width: 980px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(12, 25, 40, 0.05);
+    border-radius: 35px;
+    width: 100%;
+    overflow-y: auto;
+    .modal-header{
+        border: none;
+        background: rgba(247, 200, 148, .15);
+        padding: 20px 30px;
+        &.add-pataent-header{
+            background: rgba(255, 175, 247, .15);
+        }
+        h2{
+            font-size: 25px;
+            color: #0C1928;
+            margin: 0;
+        }
+        .modal-close{
+            background: rgba(255, 27, 40, 0.1);
+            border: 1px solid rgba(255, 27, 40, 0.2);
+            border-radius: 50%;
+            display: block;
+            height: 37px;
+            width: 37px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 37px;
+            color: #FF1B28;
+        }
+    }
+}
+
+
+.maan-form-modal{
+    padding: 25px 35px;
+    .row{
+        gap: 15px 0;
+    }
+    .maan-input-group{
+        label{
+            display: block;
+            color: rgba(12, 25, 40, .3);
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-weight: 400;
+            span{
+                color: #FF0000;
+            }
+        }
+        .form-control{
+            width: 100%;
+            box-shadow: none;
+            padding: 9px;
+            font-size: 14px;
+            color: rgba(12, 25, 40, .3);
+            border-color:  #e8e8e8;
+            &::placeholder{
+                color: rgba(12, 25, 40, .3);
+            }
+        }
+        .nice-select{
+            width: 100%;
+            font-size: 14px;
+            color: rgba(12, 25, 40, .3);
+            .list{
+                width: 100%;
+            }
+        }
+    }
+    .maan-btn{
+        display: block;
+        max-width: 145px;
+        width: 100%;
+        margin-left: auto;
+        background: #25D4A9;
+        box-shadow: none;
+        margin-top: 40px;
+    }
+}

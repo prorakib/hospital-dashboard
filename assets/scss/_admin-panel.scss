@@ -1,0 +1,805 @@
+/*--------------------------------------
+	- maan-wrapper
+----------------------------------------*/
+.maan-rightside-content {
+    width: calc(100% - 290px);
+    position: relative;
+    float: right;
+    transition: all 0.3s;
+    background-color: #EEEEEE;
+}
+.maan-main-content {
+    background: #eff3f6;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    .active {
+        width: calc(100% - 80px);
+    }
+}
+ #content {
+    width: calc(100% - 290px);
+    position: relative;
+    float: right;
+    transition: all 0.3s;
+    background-color: #EEEEEE;
+}  
+
+#content.active {
+    width: calc(100% - 80px);
+}  
+
+.maan-state-overview {
+    --maan-item-bg: var(--clr-white);
+    --maan-item-shadow: 8px 10px 80px rgba(0, 15, 55, 0.04);
+    --maan-item-radius: 25px;
+    --maan-header-bg: var(--maan-ct-header-bg);
+    --maan-ct-shadow: var(--maan-ct-box-shadow);
+    --maan-title-ff: var(--roboto);
+    --maan-title-fw: var(--fw-500);
+    --maan-title-fs: var(--fs-30);
+    --maan-title-clr: var(--clr-black-10);
+    --maan-p-ff: var(--roboto);
+    --maan-p-fw: var(--fw-400);
+    --maan-p-fs: var(--fs-20);
+    --maan-p-clr: var(--clr-black-10);
+    --maan-ct-title-ff: var(--roboto);
+    --maan-ct-title-fw: var(--fw-400);
+    --maan-ct-title-fs: var(--fs-18);
+    --maan-ct-title-clr: var(--maan-ct-clr);
+    --maan-ct-p-ff: var(--roboto);
+    --maan-ct-p-fw: var(--fw-400);
+    --maan-ct-p-fs: var(--fs-18);
+    --maan-ct-p-clr: var(--maan-ct-clr);
+    --maan-dg-ff: var(--roboto);
+    --maan-dg-fw: var(--fw-400);
+    --maan-dg-fs: var(--fs-12);
+    --maan-dg-clr: var(--maan-icon-clr);
+    --maan-date-ff: var(--roboto);
+    --maan-date-fw: var(--fw-400);
+    --maan-date-fs: var(--fs-14);
+    --maan-date-clr: var(--clr-black-10);
+    --maan-apt-title-ff: var(--roboto);
+    --maan-apt-title-fw: var(--fw-400);
+    --maan-apt-title-fs: var(--fs-14);
+    --maan-apt-title-clr: var(--maan-icon-clr);
+    --maan-note-title-ff: var(--roboto);
+    --maan-note-title-fw: var(--fw-400);
+    --maan-note-title-fs: var(--fs-14);
+    --maan-note-title-clr: var(--clr-black-10);
+    --maan-btn-title-ff: var(--roboto);
+    --maan-btn-title-fw: var(--fw-400);
+    --maan-btn-title-fs: var(--fs-16);
+
+
+    --maan-icon-clr: var(--clr-black);
+    --maan-icon-bg: transparent;
+    // @include padding(py, 100px);
+
+    .maan-counter-title {
+        font-family: var(--maan-title-ff);
+        font-weight: var(--maan-title-fw);
+        font-size: var(--maan-title-fs);
+        color: var(--clr-black-10);
+    }
+
+    .count-icon {
+        font-family: var(--maan-title-ff);
+        font-weight: var(--maan-title-fw);
+        font-size: var(--maan-title-fs);
+        color: var(--clr-black-10);
+    }
+
+    .maan-counter-content {
+        font-family: var(--maan-p-ff);
+        font-weight: var(--maan-p-fw);
+        font-size: var(--maan-p-fs);
+        color: var(--clr-black-10);
+    }
+
+    .maan-chart-title {
+        font-family: var(--maan-ct-title-ff);
+        font-weight: var(--maan-ct-title-fw);
+        font-size: var(--maan-ct-title-fs);
+        color: var(--clr-black-10);
+        line-height: 21px;
+    }
+
+    .maan-chart-content {
+        font-family: var(--maan-ct-p-ff);
+        font-weight: var(--maan-ct-p-fw);
+        font-size: var(--maan-ct-p-fs);
+        color: var(--clr-black-10);
+        line-height: 21px;
+        opacity: 0.7;
+    }
+
+    .maan-appoint-dg {
+        font-family: var(--maan-dg-ff);
+        font-weight: var(--maan-dg-fw);
+        font-size: var(--maan-dg-fs);
+        color: var(--maan-dg-clr);
+        line-height: 14px;
+    }
+
+    .maan-date {
+        font-family: var(--maan-date-ff);
+        font-weight: var(--maan-date-fw);
+        font-size: var(--maan-date-fs);
+        color: var(--maan-date-clr);
+        line-height: 16px;
+    }
+
+    .maan-title {
+        font-family: var(--maan-apt-title-ff);
+        font-weight: var(--maan-apt-title-fw);
+        font-size: var(--maan-apt-title-fs);
+        // color: var( --maan-title-clr);
+        line-height: 16px;
+    }
+
+    .maan-note {
+        font-family: var(--maan-note-title-ff);
+        font-weight: var(--maan-note-title-fw);
+        font-size: var(--maan-note-title-fs);
+        color: var(--maan-note-title-clr);
+        line-height: 19px;
+    }
+    .maan-btn {
+        font-family: var(--maan-btn-title-ff);
+        font-weight: var(--maan-btn-title-fw);
+        font-size: var(--maan-btn-title-fs);
+        color: var(--maan-btn-title-clr);
+        line-height: 19px;
+    }
+
+    .maan-clr {
+        --maan-note-title-clr: var(--clr-black);
+    }
+
+    .maan-p-clr {
+        --maan-note-title-clr: var(--maan-ct-clr);
+    }
+
+    .maan-radius {
+        --maan-item-radius: 17px;
+    }
+
+    .maan-app-radius {
+        --maan-item-radius: 8px;
+    }
+
+
+    .maan-chart-radius {
+        --maan-item-radius: 25px 25px 0px 0px;
+    }
+
+    .maan-appoint-header-bg {
+        --maan-header-bg: var(--maan-ct-header-bg-2);
+    }
+
+    .maan-appoint-header-bg2 {
+        --maan-header-bg: var(--maan-ct-header-bg-3);
+    }
+
+    .maan-appoint-header-bg3 {
+        --maan-header-bg: var(--maan-ct-header-bg-4);
+    }
+
+    .fs {
+        --maan-ct-title-fs: var(--fs-15);
+    }
+}
+
+.maan-layout-style-one {
+    position: relative;
+    --maan-icon-bg: rgba(3, 169, 244, 0.1);
+    --maan-icon-clr: #03A9F4;
+
+    .maan-counter-wpr {
+        &.grid-4 {
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .maan-counter-box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 15px;
+            background: var(--maan-item-bg);
+            box-shadow: var(--maan-item-shadow);
+            border-radius: var(--maan-item-radius);
+            position: relative;
+            z-index: 1;
+
+            .maan-icon {
+                i {
+                    height: 100px;
+                    width: 100px;
+                    line-height: 100px;
+                    text-align: center;
+                    background: var(--maan-icon-bg);
+                    color: var(--maan-icon-clr);
+                    display: inline-block;
+                    border-radius: var(--maan-item-radius);
+
+                }
+            }
+
+            .maan-desc {
+                .maan-counter-title {
+                    line-height: 35px;
+                }
+
+                .maan-counter-content {
+                    line-height: 20px;
+                }
+            }
+        }
+
+    }
+
+    .maan-icon-clr-lightblue {
+        --maan-icon-bg: rgba(3, 169, 244, 0.1);
+        --maan-icon-clr: #03A9F4;
+    }
+
+    .maan-icon-clr-purple {
+        --maan-icon-bg: rgba(151, 47, 255, 0.1);
+        --maan-icon-clr: #972FFF;
+    }
+
+    .maan-icon-clr-green {
+        --maan-icon-bg: rgba(25, 210, 155, 0.1);
+        --maan-icon-clr: #19D29B;
+    }
+
+    .maan-icon-clr-pink {
+        --maan-icon-bg: rgba(255, 63, 178, 0.1);
+        --maan-icon-clr: #FF1FA5;
+    }
+
+    .maan-icon-clr-orange {
+        --maan-icon-bg: rgba(244, 162, 3, 0.1);
+        --maan-icon-clr: #F4A203;
+    }
+
+    .maan-icon-clr-lime {
+        --maan-icon-bg: rgba(80, 207, 21, 0.1);
+        --maan-icon-clr: #50CF15;
+
+    }
+
+    .maan-icon-clr-red {
+        --maan-icon-bg: rgba(255, 53, 65, 0.1);
+        --maan-icon-clr: #FF3541;
+
+    }
+
+    .maan-icon-clr-blue {
+        --maan-icon-bg: rgba(0, 117, 255, 0.1);
+        --maan-icon-clr: #0075FF;
+    }
+
+
+    .maan-content-wpr {
+        background: var(--maan-item-bg);
+        box-shadow: var(--maan-ct-box-shadow);
+        border-radius: var(--maan-item-radius);
+        margin: 30px 0 0;
+
+        .maan-card-header {
+            padding: 15px 30px;
+            background: var(--maan-header-bg);
+            box-shadow: var(--maan-ct-box-shadow);
+            border-radius: var(--maan-item-radius);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .maan-chart-title {
+                text-transform: capitalize;
+                margin: 0;
+            }
+
+            .card-dropdown {
+                .maan-chart-content {
+                    background-color: transparent;
+                    border-radius: 0;
+                    border: solid 1px transparent;
+                    text-transform: capitalize;
+                    line-height: 21px;
+                    height: 20px;
+                    z-index: 5;
+                    &::after {
+                        border-bottom: 2px solid rgba(12, 25, 40, 0.8);
+                        border-right: 2px solid rgba(12, 25, 40, 0.8);
+                        content: '';
+                        display: block;
+                        height: 8px;
+                        margin-top: -4px;
+                        pointer-events: none;
+                        position: absolute;
+                        right: 12px;
+                        top: 50%;
+                        -webkit-transform-origin: 66% 66%;
+                        -ms-transform-origin: 66% 66%;
+                        transform-origin: 66% 66%;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        -webkit-transition: all 0.15s ease-in-out;
+                        transition: all 0.15s ease-in-out;
+                        width: 7px;
+                    }
+                }
+            }
+        }
+       
+        .maan-note-card-body {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 14px;
+
+            .maan-note-wpr {
+                .maan-content {
+    
+                    .maan-note {
+                        margin-bottom: 30px;
+                        text-transform: capitalize;
+                    }
+    
+                   
+                }
+                .maan-button {
+                    text-align: right;
+                    .maan-btn {
+                        background: rgba(3, 169, 244, 0.1);
+                        color: #03A9F4;
+                        text-transform: capitalize;
+                        padding: 14px 20px;
+                        border-radius: 7px;
+                        margin-right: 5px;
+                        &.other-btn {
+                            background: rgba(37, 212, 169, 1);
+                            color: #fff;
+                            text-align: right;
+                        }
+                    }
+                }
+                
+
+            }
+        }
+
+        .maan-card-header {
+            &.maan-appoint-header-bg2 {
+                display: block;
+            }
+        }
+
+       
+
+        .maan-appoint-card-body {
+            --maan-icon-bg: rgba(255, 164, 28, 0.1);
+            --maan-icon-clr: #FFA41C;
+            padding: 10px 20px;
+
+            .table {
+                margin: 0;
+
+                tr {
+                    border: transparent;
+                }
+            }
+
+            .maan-appoint-image {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+
+                img {
+                    width: 55px;
+                    height: 55px;
+                    border-radius: var(--maan-item-radius);
+                }
+            }
+
+            .maan-appoint-dg {
+                text-transform: capitalize;
+                text-decoration: none;
+                margin-bottom: 2px;
+            }
+
+            .maan-chart-title {
+                text-decoration: none;
+                text-transform: capitalize;
+            }
+
+            .maan-date {
+                margin-bottom: 0;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .maan-title {}
+
+            .maan-appoint-status {
+                span {
+                    background: var(--maan-icon-bg);
+                    color: var(--maan-icon-clr);
+                    border-radius: var(--maan-item-radius);
+                    padding: 10px 18px;
+                    text-align: center;
+                }
+
+            }
+
+            .maan-bg-warning-light {
+                --maan-icon-bg: rgba(255, 164, 28, 0.1);
+                --maan-icon-clr: #FFA41C;
+            }
+
+            .maan-bg-soft-success {
+                --maan-icon-bg: rgba(37, 212, 169, 0.1);
+                --maan-icon-clr: #25D4A9;
+            }
+
+            .maan-bg-soft-danger {
+                --maan-icon-bg: rgba(255, 80, 90, 0.1);
+                --maan-icon-clr: #FF505A;
+            }
+
+        }
+
+        .maan-pie-card-body {
+            padding: 15px 16px;
+
+            .maan-chart-point {
+                display: flex;
+                justify-content: space-between;
+
+                .maan-check-point-area {
+                    width: 180px;
+                    height: 180px;
+                }
+
+                .maan-chart-point-list {
+
+                    li {
+                        color: rgba(12, 25, 40, 0.7);
+                        margin-bottom: 5px;
+
+                        i {
+                            margin-right: 5px;
+                        }
+
+                        &:nth-child(1) i {
+                            color: #FE4F4F;
+                        }
+
+                        &:nth-child(2) i {
+                            color: #FFDB1D;
+                        }
+
+                        &:nth-child(3) i {
+                            color: #2CE78D;
+                        }
+
+                        &:nth-child(4) i {
+                            color: #3190FF;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #0C1928;
+                            opacity: 0.5;
+                            margin-left: 20px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .maan-content-wrapper {
+        &.grid-2 {
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+
+
+.maan-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/*=======================================================
+   main-content navbar-design start
+   ===============================================*/
+
+.language-select .nice-select {
+    background: none;
+    border: none;
+}
+
+#content {
+    position: relative;
+    transition: all 0.3s;
+}
+
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    display: block !important;
+}
+
+
+
+
+.navbar-nav > li.show .dropdown-menu {
+   transform: translate3d(0, 0, 0);
+   opacity:1;
+   visibility:visible;
+}
+
+
+.dropdown-menu li > a {
+   font-size: 13px;
+   padding: 10px 20px;
+   margin: 0 5px;
+   border-radius: 2px;
+   font-weight: 400;
+   transition: all 150ms linear;
+}
+
+.navbar-nav > .active > a:focus {
+   color: #FFFFFF;
+   background-color: rgba(0, 0, 0, 0.08);
+}
+
+
+.navbar-nav li a {
+   position: relative;
+   display: block;
+   padding: 10px 15px!important;
+}
+
+
+.maan-notifocation-dropdown.nav-item {
+    position: relative;
+&:hover {
+    .maan-notification-dropdown-menu {
+        transform: translateY(30px);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.maan-notification-dropdown-menu {
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
+	
+    transition: all linear 0.3s;
+    visibility: hidden;
+	transition: all 150ms linear;
+    display: block;
+	min-width:15rem;
+	right: 0;
+    left: auto;
+    opacity: 0;
+}
+}
+
+.maan-mess-dropdown.nav-item {
+    position: relative;
+&:hover {
+    .maan-mess-dropdown-menu {
+        transform: translateY(30px);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.maan-mess-dropdown-menu {
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
+    transition: all linear 0.3s;
+    visibility: hidden;
+	transition: all 150ms linear;
+    display: block;
+	min-width:15rem;
+	right: 0;
+    left: auto;
+    opacity: 0;
+    ul {
+        li {
+            a{
+                padding: 10px !important;
+            }
+        }
+    }
+}
+.pull-left {
+    float: left;
+    margin-right: 5px;
+}
+.mail-contnet {
+    display: inline-block;
+    width: 75%;
+    vertical-align: middle;
+    overflow: hidden;
+    h4 {
+        padding: 0;
+    margin: 0;
+    color: #7792b1;
+    font-size: 15px;
+    position: relative;
+    font-weight: 400;
+    }
+    span {
+        margin: 5px 0 0;
+    font-size: 10px;
+    color: #475f7b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: list-item;
+    }
+    .small {
+        color: #7792b1;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+}
+}
+
+@media(max-width: 1400px){
+    .maan-layout-style-one .maan-counter-wpr.grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width: 600px){
+    .maan-layout-style-one .maan-counter-wpr.grid-4 {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .maan-layout-style-one .maan-content-wrapper.grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboard-topnew-customer{
+    .maan-chart-title{
+        text-align: left;
+    }
+    .maan-note-card-body{
+        align-items: center;
+        padding: 10px 15px !important;
+    }
+    .dash-customar-author{
+        display: flex;
+        align-items: center;
+        img{
+            height: 45px;
+            width: 45px;
+            min-width: 45px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        p{
+            margin: 0;
+            font-size: 12px;
+            font-weight: 400;
+            color: #03A9F4;
+            opacity: .6;
+        }
+        h6{
+            margin: 0;
+            font-size: 14px;
+            color: #0C1928;
+            opacity: 0.7;
+        }
+    }
+    .invoice{
+        a{
+            display: block;
+            font-size: 14px;
+            color: #03A9F4;
+        }
+    }
+    .date{
+        p{
+            font-size: 14px;
+            color: #0C1928;
+            opacity: 0.7;
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
+
+.maan-state-overview .maan-app-radius{
+    text-align: right;
+}
+.dashbest-selling-product{
+    .maan-card-header{
+        background: rgba(104, 238, 174, .15) !important;
+    }
+}
+.maan-layout-style-one .maan-content-wpr .maan-appoint-card-body .maan-appoint-status span {
+    max-width: 114px;
+    display: block;
+    margin-left: auto;
+}
+
+.maan-chart-color-point-wrp{
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .color-items{
+        text-align: left;
+        position: relative;
+        &.blue{
+            &::after{
+                background: #3190FF;
+            }
+        }
+        &.red{
+            &::after{
+                background: #FE4F4F;
+            }
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            display: block;
+            left: -20px;
+            top: 0;
+            background: #FFDB1D;
+            height: 13px;
+            width: 13px;
+            border-radius: 50%;
+        }
+        p{
+            font-size: 14px;
+            margin: 0;
+            line-height: 1;
+        }
+        span{
+            margin: 0;
+            padding: 0;
+            font-size: 10px;
+        }
+    }
+}
